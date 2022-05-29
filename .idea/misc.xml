@@ -4,7 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/_App development (java)/My_calc/app/src/main/res/layout/activity_history.xml" value="0.2980072463768116" />
-        <entry key="..\:/_App development (java)/My_calc/app/src/main/res/layout/activity_main.xml" value="0.33469202898550726" />
+        <entry key="..\:/_App development (java)/My_calc/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/_App development (java)/My_calc/app/src/main/res/layout/content_history.xml" value="0.2957427536231884" />
       </map>
     </option>
   </component>
