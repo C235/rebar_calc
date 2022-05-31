@@ -9,6 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Activity_rebar">
+            android:name=".Activity_rebar"
+            android:label="rebar"
+            android:theme="@style/AppTheme.NoActionBar">
+        <intent-filter>
+            <action android:name=".Activity_rebar" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        </activity>
         <activity
             android:name=".history"
             android:label="@string/title_activity_history"
@@ -19,9 +29,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
-        <activity
-            android:name=".MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
