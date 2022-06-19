@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/Result_2"
+        android:id="@+id/Res_count"
         android:layout_width="380dp"
         android:layout_height="50dp"
         android:layout_marginTop="5dp"
@@ -215,7 +215,7 @@
         android:textColor="#F44336"
         android:textSize="35sp"
         app:layout_constraintStart_toEndOf="@+id/nbrckt2"
-        app:layout_constraintTop_toBottomOf="@+id/Result_2" />
+        app:layout_constraintTop_toBottomOf="@+id/Res_count" />
 
     <Button
         android:id="@+id/nbrckt1"
@@ -229,7 +229,7 @@
         android:textColor="#FAFAFA"
         android:textSize="35sp"
         app:layout_constraintStart_toEndOf="@+id/nhstr"
-        app:layout_constraintTop_toBottomOf="@+id/Result_2" />
+        app:layout_constraintTop_toBottomOf="@+id/Res_count" />
 
     <Button
         android:id="@+id/nbrckt2"
@@ -243,7 +243,7 @@
         android:textColor="#FAFAFA"
         android:textSize="35sp"
         app:layout_constraintStart_toEndOf="@+id/nbrckt1"
-        app:layout_constraintTop_toBottomOf="@+id/Result_2" />
+        app:layout_constraintTop_toBottomOf="@+id/Res_count" />
 
     <Button
         android:id="@+id/n4"
@@ -312,7 +312,7 @@
         android:textColor="#FAFAFA"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Result_2" />
+        app:layout_constraintTop_toBottomOf="@+id/Res_count" />
 
     <Button
         android:id="@+id/n8"
@@ -337,16 +337,18 @@
         android:background="@drawable/button"
         android:scaleType="centerCrop"
         app:layout_constraintStart_toEndOf="@+id/nclr"
-        app:layout_constraintTop_toBottomOf="@+id/Result_2"
+        app:layout_constraintTop_toBottomOf="@+id/Res_count"
         app:srcCompat="@drawable/backspace_6" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/b_rebar"
         android:layout_width="70dp"
         android:layout_height="90dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
-        android:text="Button"
+        android:background="@drawable/button"
+        android:text="rebar"
+        android:textColor="#FAFAFA"
         app:layout_constraintStart_toEndOf="@+id/div"
         app:layout_constraintTop_toBottomOf="@+id/nbspc" />
 
