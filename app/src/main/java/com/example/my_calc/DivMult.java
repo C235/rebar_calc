@@ -1,7 +1,7 @@
 package com.example.my_calc;
 
 public class DivMult {
-    ////////////////////////////////метод для приведения подобных////////////////////////////////////
+    ////////////////////////////////метод для приведения подобных//////////////////////////////////
 
     double GetDivMult (double d[], String t4[], int len){
         //System.out.print("\nstart divmult");

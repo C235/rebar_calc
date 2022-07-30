@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:background="#757575"
+    android:fontFamily="@font/isocpeur"
     tools:context=".history">
 
     <Button
@@ -13,6 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
+        android:fontFamily="@font/isocpeur"
         android:background="@drawable/button"
         android:textColor="#FFFFFF"
         android:text="назад">

@@ -18,13 +18,13 @@ public class history extends AppCompatActivity {
 
     ListView list;
     String r1;
-    final String[] his_arr2 = {" "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," ",
-            " "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "};
+    final String[] his_arr2 = {"","","","","","","","","","","","","","","","","","","","",
+            "","","","","","","","","","","","","","","","","","","",""};
     ArrayList<String> his_arr3 = new ArrayList();
     private SharedPreferences sPref;
-    final String SAVED_TEXT = "saved_text";
+    //final String SAVED_TEXT = "saved_text";
 
-    String[] save_num = {"1","2","3","4","5"};
+    String[] save_num = {"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15"};
     int sv_n1 = 0;
 
 
@@ -65,15 +65,6 @@ public class history extends AppCompatActivity {
         Intent intent = getIntent();
         int t1 = 0;
         sv_n1 = intent.getIntExtra("name", t1);
-        /*final String[] name = intent.getStringArrayExtra("name");
-        int num = 0;
-        for (int i = 0; i < his_arr2.length; i++)
-            if (his_arr2[i] == " ") {
-                num = i;
-                break;
-            }
-
-        System.arraycopy(name, 0, his_arr2, num, name.length);*/
 
         loadText(sv_n1);
 
@@ -82,7 +73,7 @@ public class history extends AppCompatActivity {
         list.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
 
         ArrayAdapter<CharSequence> adapter = new ArrayAdapter<CharSequence>(this,
-                android.R.layout.simple_list_item_single_choice, his_arr2);
+                R.layout.listview_calc_item, his_arr2);
 
         list.setAdapter(adapter);
 
@@ -106,19 +97,8 @@ public class history extends AppCompatActivity {
                     }
                 });
     }
-    //попытка выгрузить из шаредпреф преобразовать список в массив!!!!!
-    private void loadText(int sv) {
-        //рабочая часть
-        /*sPref = getSharedPreferences("MyPref", MODE_PRIVATE);
-        String savedText = sPref.getString(SAVED_TEXT, "");
-        StringTokenizer st = new StringTokenizer(savedText, ",");
-        ArrayList<String> array = new ArrayList<String>(st.countTokens());
-        while(st.hasMoreTokens()) {
-            array.add(st.nextToken());
-        }
-        for(int i=0; i<array.size();i++) his_arr2[i] = array.get(i);*/
+     private void loadText(int sv) {
 
-        //передать через интент сколько раз прочитать из шаредпреф для ключа!!!!!!!!!
         for (int i = 0; i < sv; i++){
         sPref = getSharedPreferences("MyPref", MODE_PRIVATE);
         his_arr2[i] = sPref.getString(save_num[i], "");}
@@ -126,10 +106,4 @@ public class history extends AppCompatActivity {
     }
 
 }
-    /*private void saveArr() {
-        sPref = getSharedPreferences("MyPref", MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPref.edit();
-        ed.putString(SAVED_TEXT, his_arr2.get);
-        ed.commit();
-    }*/
 
